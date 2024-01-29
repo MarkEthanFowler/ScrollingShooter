@@ -3,5 +3,6 @@
 
 instance_destroy()
 instance_destroy(other)
+audio_play_sound(snd_explosion2, 1, false)
 
 obj_scoreboard.points += other.scoreValue

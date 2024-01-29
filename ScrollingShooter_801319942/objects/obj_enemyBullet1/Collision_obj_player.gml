@@ -3,6 +3,8 @@
 
 instance_destroy()
 
+audio_play_sound(snd_explosion1, 1, false)
+
 inflict_damage(10)
 
 if obj_player._player_health <= 0
