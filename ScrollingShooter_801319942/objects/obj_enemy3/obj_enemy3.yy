@@ -9,6 +9,8 @@
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy1","path":"objects/obj_enemy1/obj_enemy1.yy",},"propertyId":{"name":"extraSpeed","path":"objects/obj_enemy1/obj_enemy1.yy",},"value":".5",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy1","path":"objects/obj_enemy1/obj_enemy1.yy",},"propertyId":{"name":"scoreValue","path":"objects/obj_enemy1/obj_enemy1.yy",},"value":"50",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy2","path":"objects/obj_enemy2/obj_enemy2.yy",},"propertyId":{"name":"shotInterval","path":"objects/obj_enemy2/obj_enemy2.yy",},"value":"10",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy2","path":"objects/obj_enemy2/obj_enemy2.yy",},"propertyId":{"name":"shotType","path":"objects/obj_enemy2/obj_enemy2.yy",},"value":"obj_enemyBullet2",},
   ],
   "parent": {
     "name": "Objects",

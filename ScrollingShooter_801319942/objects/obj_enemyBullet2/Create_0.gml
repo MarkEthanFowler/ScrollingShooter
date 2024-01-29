@@ -1,14 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-/*if !obj_player
+if !instance_exists(obj_player)
 {
-	direction = 270
-}
-var px = instance_nearest(x, y, obj_enemy3).x
-var py = instance_nearest(x, y, obj_enemy3).y
-with instance_create_layer(x, y, "Instances", obj_enemyBullet2)
-{
-	direction += point_direction(x, y, px, py)
 	speed = 10
-}*/
+	direction = clamp(270, 240, 300)
+}
+else 
+{
+	speed = 10
+	direction = clamp(point_direction(x, y, obj_player.x, obj_player.y), 240, 300)
+}
+	
+

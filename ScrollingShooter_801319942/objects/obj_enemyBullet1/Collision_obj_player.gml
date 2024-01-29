@@ -3,7 +3,7 @@
 
 instance_destroy()
 
-obj_player._player_health -= 10
+inflict_damage(10)
 
 if obj_player._player_health <= 0
 {
