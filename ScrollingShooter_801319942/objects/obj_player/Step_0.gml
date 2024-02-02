@@ -44,3 +44,5 @@ if canShoot == true and keyboard_check_direct(vk_space)
 	alarm[0] = game_get_speed(gamespeed_fps) / 2
 	instance_create_layer(x, y, "Instances", obj_playerBullet)
 }
+
+
