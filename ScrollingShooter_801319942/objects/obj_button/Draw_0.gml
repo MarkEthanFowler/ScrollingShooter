@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-draw_button(300, 32, 1100, 192, mouse_check_button_pressed(mb_left))
-draw_text(700, 112, "Easy")
-
+draw_self()
+draw_set_font(MainFont)
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+draw_text(x + 145, y + 150, difficulty);
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);

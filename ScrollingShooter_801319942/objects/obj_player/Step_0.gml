@@ -28,11 +28,6 @@ if not keyboard_check(vk_down) and not keyboard_check(vk_up)
 	vspeed -= sign(vspeed)
 }
 
-if keyboard_check_pressed(ord("R"))
-{
-	game_restart()
-}
-
 if _player_health <= 0
 {
 	instance_destroy()
@@ -44,5 +39,26 @@ if canShoot == true and keyboard_check_direct(vk_space)
 	alarm[0] = game_get_speed(gamespeed_fps) / 2
 	instance_create_layer(x, y, "Instances", obj_playerBullet)
 }
+
+if (room == Room_Easy || room == Room_Hard || room == Room_Insane)
+{
+	if keyboard_check_pressed(vk_alt) and keyboard_check_pressed(ord("P"))
+    {
+		paused = !paused;
+		if paused == false
+        {
+			instance_activate_all()
+			surface_free(paused_surf)
+            paused_surf = -1
+        }
+    }
+	if paused == true
+    {
+		alarm[0]++
+    }
+}
+
+
+
 
 
